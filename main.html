@@ -1,16 +1,41 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+    <header>
+        <h1 role="heading">Jane Doe's Portfolio</h1>
+
+        <nav role="navigation">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <img role="img" src="https://via.placeholder.com/150" alt="A profile picture of Jane Doe.">
+            
+            <p>Welcome to my professional portfolio. I am a passionate web developer focused on creating clean, accessible, and user-friendly web applications.</p>
+        </section>
+
+        <section id="skills">
+            <h2>My Skills</h2>
+            <ul role="list">
+                <li role="listitem">Semantic HTML5 & Accessibility</li>
+                <li role="listitem">Advanced CSS & Responsive Design</li>
+                <li role="listitem">Modern JavaScript (ES6+)</li>
+            </ul>
+        </section>
+    </main>
 
 </body>
-
 </html>
